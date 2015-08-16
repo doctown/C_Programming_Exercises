@@ -1,0 +1,24 @@
+/********************************************************************/
+/* Ex9-1 - Uses functions to count the number of words in a string. */
+/* 								    */
+/* Author: David Ogor						    */
+/* Date: 07-23-2015						    */
+/********************************************************************/
+#include<stdio.h>
+
+int count_words(const char *str)
+{
+
+  return -1;
+}
+
+int main(void)
+{
+  char line[1000];
+
+  fgets(line, sizeof(line), stdin);
+  
+  printf("Total number of words %d\n", count_words);
+
+  return 0;
+}

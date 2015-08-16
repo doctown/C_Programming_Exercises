@@ -1,0 +1,33 @@
+/********************************************************************************************/
+/* Ex4-2 Print out the letter E using '*' characters					    */
+/* 											    */
+/* Author: David Ogor									    */
+/* Date: 04-25-2015									    */
+/* Purpose: Create an E to be displayed on the screen. 7 characters high, 5 characters wide */
+/********************************************************************************************/
+
+#include <stdio.h>
+
+#define HEIGHT 7		/* height of letter */
+#define WIDTH_MAX 5		/* maximum width of letter */
+#define WIDTH_MIN 1 		/* minimum width of letter */
+#define TOP 1			/* top of the letter */
+#define MIDDLE 4		/*  */
+#define BOTTOM 7		/* bottom of the letter */
+#define CHARACTER '*'		/* character to create letter */
+int main(void) {
+  int i,k, length;
+
+  for (i = 1; i <= HEIGHT, i++) {
+    if (i == TOP || i == BOTTOM)
+      length = HEIGHT_MAX;
+    else if (i == MIDDLE)
+      length = HEIGHT_MAX/2;
+    else
+      length = HEIGHT_MIN;
+    for (k = 0; k < length; k++)
+      printf("%c", CHARACTER);
+    printf("\n");
+    }
+  return 0;
+}

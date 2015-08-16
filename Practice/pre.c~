@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+#define p(N) printf(N " %d\n", N)
+#define t(text) puts("Employee id\n" ## text);
+
+int main(int argc, char *args[]) {
+
+  int d = 4;
+  p(4);
+  t(4);
+
+  return 0;
+}

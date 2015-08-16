@@ -1,0 +1,33 @@
+/*****************************************************************/
+/* Ex8-2 Calculate the total resistance of a series of resistors */
+/* 								 */
+/* Author: David Ofor						 */
+/* Date: 06-30s2015						 */
+/* 								 */
+/* Purpose: Practice chapter 8					 */
+/*****************************************************************/
+#include <stdio.h>
+
+int calc_resistance(const int sum, const int n) {
+  return 0;
+}
+
+int main(void) {
+  int res = 0;
+  char buf[BUFSIZ];
+  float sum = 0.0;
+  float num1 = 0.0;
+  float num2 = 0.0;
+  int cnt = 0;
+  
+  fgets(buf, BUFSIZ, stdin);
+  do {
+    res = sscanf(buf, "%d/%d%n", &num1, &num2, &n);
+    sum += num1 / num2;
+    buf += n;
+  } while (res != EOF);
+
+  printf("%.2f", sum);
+
+  return 0;
+}

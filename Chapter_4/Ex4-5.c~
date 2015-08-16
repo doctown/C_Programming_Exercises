@@ -1,0 +1,16 @@
+/********************************************************************/
+/* Ex4-5 Test incorrect print formats with the wrong variable type. */
+/* 								    */
+/* Author: David Ogor						    */
+/* 								    */
+/* Date: 05-02-2015						    */
+/* 								    */
+/* Purpose: Test different format specifiers.			    */
+/********************************************************************/
+
+int main(int argc, char *argv[])
+{
+  printf("%%f");
+
+  return 0;
+}

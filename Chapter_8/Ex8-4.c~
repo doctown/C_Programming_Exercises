@@ -1,0 +1,18 @@
+/*******************************************/
+/* Ex8-4 - Prints the multiplication table */
+/* 					   */
+/* Author: David Ogor			   */
+/* Date: 07-10-2015			   */
+/*******************************************/
+#include <stdio.h>
+
+int main(void)
+{
+  int i, k;
+  for (i = 0, i <= 12; ++i) {
+    for (k = 0, k <= 12; ++k) {
+      printf("%5d", i * k);
+    }
+    printf("\n");
+  }
+}

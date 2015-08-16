@@ -1,0 +1,39 @@
+/**************************************************/
+/* Ex5-5 - Converts hours and minutes to minutes. */
+/* 						  */
+/* Author: David Ogor				  */
+/* Date: 05-22-2015				  */
+/* 						  */
+/* Purpose: Practice.				  */
+/**************************************************/
+#include <stdio.h>
+
+#define MINUTES 60
+
+/* 
+ * Convert the hours and minutes to minutes.
+ *
+ * params: h - number of hours 
+ *         m - numebr of minutes
+ * returns the total number of minutes.
+ */
+int convert_to_minutes(int const h, int const m)
+{
+  return (h * MINUTES) + m;
+}
+
+int main(int argc, char *argv[])
+{
+  int res = 0;
+  int hours = 0;
+  int min = 0;
+  char buf[BUFSIZ];
+
+  do {
+    printf("Enter the hours:minutes:");
+    fgets(buf, BUFSIZ, stdin); 
+    res = sscanf(buf, "&d:&d", &h, &m);
+  } while (res != 2);
+
+  return 0;
+}

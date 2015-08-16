@@ -1,0 +1,37 @@
+
+/***************************************************************/
+/* Ex4-4.c Prints the word Hello in big block letters.	       */
+/* 							       */
+/* Author: David Ogor					       */
+/* 							       */
+/* Revisions: 						       */
+/*            05-02-15    Created program		       */
+/* 							       */
+/* Purpose: Display a message on the screen.          	       */
+/***************************************************************/
+
+#include <stdio.h>
+
+#define HEIGHT 7		/* height of the letter */
+#define WIDTH 5			/* width of the letter */
+#define SYM '#'			/* symbol to be printed*/
+/*
+ * Print a set of character and provide a specified number of spaces afterwards.
+ */
+void print_letter(int letternum, int spacenum)
+{
+  int i = 0;
+  int j = 0;
+
+  while (i++ < letternum)
+    printf("%c", SYM);
+  while (j++ < spanenum)
+    printf(" ");
+}
+
+int main(int argc, char *argv[]) 
+{
+
+  
+  return 0;
+}

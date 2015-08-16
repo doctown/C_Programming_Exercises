@@ -1,0 +1,35 @@
+/**********************************************************/
+/* Ex5-4 - Converts kilometers per hour to miles per hour */
+/* 							  */
+/* Author: David Ogor					  */
+/* Date: 05-22-2015					  */
+/* 							  */
+/* Purpose: Practice					  */
+/**********************************************************/
+#include <stdio.h>
+
+/* 
+ * Convert kilos per hour to miles.
+ *
+ * returns the converted value 
+ */
+float convert_kilo_to_miles(float const kilo)
+{
+  return kilo * 0.6213712;
+}
+
+int main(int argc, char *argv[])
+{
+  char buf[BUFSIZ];
+  int res = 0;
+  float kilo = 0.0;
+
+  do {
+    printf("Enter value('kph'):");
+    fgets(buf, BUFSIZ, stdin);
+  } while ((res = sscanf(buf, "%f", &kilo)) != 1);
+
+  printf("%f in mph is %.2f\n", kilo, convert_kilo_to_miles(kilo));
+
+  return 0;
+}

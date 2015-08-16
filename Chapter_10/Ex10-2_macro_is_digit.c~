@@ -1,0 +1,9 @@
+/************************************************************/
+/* Program: Uses a macro to determine if a digit is passed. */
+/* 							    */
+/* Author: David Ogor					    */
+/* Date: 08-04-15					    */
+/************************************************************/
+#include <stdio.h>
+
+#define isdigit(n) 
