@@ -1,0 +1,25 @@
+/*********************************************************/
+/* Sets up a mailing list struct and print out the data. */
+/* 							 */
+/* Author: David					 */
+/* Date: 08-22-2015					 */
+/*********************************************************/
+#include <stdio.h>
+
+struct mailing_list {
+  short st_num;
+  char *street;
+  short zip_code;
+  char city[10];
+  char state[2];
+} mail[3] = {
+  {},
+  {},
+  {}
+};
+
+int main(int argc, char *argv[])
+{
+
+  return 0;
+}
